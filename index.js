@@ -1,11 +1,11 @@
 // Submit API Key
 let rootPath =
-  'https://lebogangsekaleli@gmail.com.itvarsity.org/api/ContactBook/';
+  'https://appacademy@itvarsity.org.itvarsity.org/api/ContactBook/';
 document.getElementById('submitApiKey').addEventListener('click', setApiKey);
 
 function setApiKey(e) {
   e.preventDefault();
-
+  
   apiKey = document.getElementById('apiLKey').value;
   fetch(rootPath + 'controller/api-key/?api-key=' + apiKey)
     .then(function (response) {
